@@ -1,0 +1,10 @@
+.add__area{
+        width: 400px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+}
+.add__area> {
+        width: 350px;
+}
