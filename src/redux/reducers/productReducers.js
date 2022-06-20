@@ -1,7 +1,7 @@
 import * as types from '../type/type'
 
 const initialState = {
-        products:[],
+        items:[],
         product:{}
 }
 const productReducers =(state = initialState, action) => {
@@ -9,7 +9,7 @@ const productReducers =(state = initialState, action) => {
                 case types.GET_DATA:
                         return {
                                 ...state,
-                                products:action.payload.data
+                                products:action.payload
                         }
                         break;
         

@@ -12,6 +12,7 @@ export const pre_get_data = () => {
                 axios.get('http://127.0.0.1:8000/api/products')
                 .then(res => {
                         dispatch(get_data(res.data.products))
+                        console.log(res.data.products);
                 })
                 .catch(err => console.log(err)
                 )
